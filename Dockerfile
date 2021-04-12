@@ -1,7 +1,6 @@
 FROM golang:alpine as gobuild
 
 ARG TAG
-ENV TAG=$TAG
 
 RUN apk update && \
     apk add ca-certificates gcc git make musl-dev && \
